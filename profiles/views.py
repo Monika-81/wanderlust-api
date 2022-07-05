@@ -34,6 +34,7 @@ class ProfileList(generics.ListAPIView):
         'owner__followed__created_at',
     ]
 
+
 class ProfileDetail(generics.RetrieveUpdateAPIView):
     '''
     Displays single profile. If the user is the profile owner;

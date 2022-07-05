@@ -53,4 +53,4 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Post.objects.annotate(
                    comments_count=Count('comment', distinct=True),
                    likes_count=Count('likes', distinct=True)
-               ).order_by('-created_at') 
+               ).order_by('-created_at')
