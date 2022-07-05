@@ -9,7 +9,7 @@ from .settings import (
 @api_view()
 def root_route(request):
     return Response({
-        "message": "Hi and welcome to my django rest framework API!"
+        "message": "Hi and welcome to my wanderlust API!"
     })
 
 

@@ -55,7 +55,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
-    'https://wanderlust-api-p5.herokuapp.com/',
+    'wanderlust-api-p5.herokuapp.com/',
     'localhost',
 ]
 
