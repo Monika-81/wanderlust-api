@@ -8,6 +8,9 @@ from .serializers import PostSerializer
 
 
 class PostList(APIView):
+    '''
+    Listview to display posts
+    '''
     serializer_class = PostSerializer
     permission_classes = [
         permissions.IsAuthenticatedOrReadOnly
@@ -36,6 +39,10 @@ class PostList(APIView):
 
 
 class PostDetail(APIView):
+    '''
+    Displays single post. If the user is the post owner;
+    allows editing and deleting of post
+    '''
     permission_classes = [IsOwnerOrReadOnly]
     serializer_class = PostSerializer
 
