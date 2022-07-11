@@ -34,9 +34,9 @@ REST_FRAMEWORK = {
         else 'dj_rest_auth.jwt_auth.JWTCookieAuthentication'
     )],
     'DEFAULT_PAGINATION_CLASS':
-    'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10,
-    'DATETIME_FORMAT': '%a, %d %b %Y %H:%M %Z',
+        'rest_framework.pagination.PageNumberPagination',
+        'PAGE_SIZE': 10,
+        'DATETIME_FORMAT': '%a, %d %b %Y %H:%M %Z',
 }
 
 if 'DEV' not in os.environ:
@@ -68,6 +68,11 @@ ALLOWED_HOSTS = [
     'localhost',
 ]
 
+if 'CLIENT_ORIGIN' in os.environ:
+    CORS_ALLOWED_ORIGINS = [
+        os.environ.get('CLIENT_ORIGIN')
+    ]
+
 if 'CLIENT_ORIGIN_DEV' in os.environ:
     extracted_url = re.match(
         r'^.+-', os.environ.get('CLIENT_ORIGIN_DEV', ''), re.IGNORECASE
@@ -76,6 +81,7 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
     CORS_ALLOWED_ORIGIN_REGEXES = [
         rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
     ]
+
 
 CORS_ALLOW_CREDENTIALS = True
 
