@@ -1,4 +1,5 @@
 # **Wanderlust**
+Waderlust is your online travel diary app, where you can post anekdotes about your travel adventures! Both for yourself to remember, to share with family and friends as well as to inspire other fellow wanderlusters around the globe. The travel diary aims to be a platform for inspiration, discussions and sharing about all thiings travel related. The user can search for other  users posts to get information and inspiration for coming trips, as well as to share and communicate with there friends and family about the trip they are undertaken orprieviously been came home from. The travel diary site targets various kinds of people whom are interested in knowing more about a specific travel location, travel in general or to just socialize with likeminded Wanderlusters!
 
 **Wanderlust** 
 
@@ -66,8 +67,21 @@ Let me introduce you further to [**Wanderlust**]()!
 With the UX principles in mind I started with the Strategy phace, thinking about the target audience and what features would benefit them. 
 
 The target audience are:
+- people in various age groups, mostly adults, that like to travel
+- people that like to search for inspiration for their next travel
+- people that like to share about their travels
+- people that like to follow others travel adventures
+- people searching for a specific destination or topic
 
 What the user will be looking for:
+
+- Images and posts about someones travel in diary form
+- Inspiration for their next travel
+- Information about someones trip
+- Information about a location they like to travel to
+- Information about the others users of the site
+- Interaction with other people interested in traveling
+
 
 [Back to top](#wanderlust)
 
@@ -82,15 +96,30 @@ What the user will be looking for:
 
 <br>
 
-**Epic: Admin**
-
-
 **Epic: Account Management**
+- As a Site User I can sign up for an account so that I can use all the features reserved for members
+- As a Site User I can log in to the site so that I can use all the features of the site
+- As a Site User I can easily log out from the site so that my account and its content remains secure
+- As a Site User I can create a personal profile so that I can control my content
+- As a Site User I can edit my personal profile so that I can keep it up to date and safe
 
+**Epic: Forum View**
+- As a Site User I can read posts and comments in detail so that I can get information and inspiration
+- As a Site User I can see the latest post at the home page so that I get the newest input directly
+- As a Site User I can use a search function so that I can find the right post or user that interests me
+- As a Site User I can easily and intuitively navigate the site so that I can find what I am looking for
+- As a Site User I can see the date a post was created and updated so that I know how accurate it is
+
+**Epic: Forum Interactions**
+- As a logged in Site User I can create new post so that I can update my travel diary
+- As a logged in Site User I can comment on posts so that I can interact with the other users
+- As a logged in Site User I can edit or delete my posts and comment so that I display controll my input on the site
+- As a logged in Site User I can like posts so that others can see if a post is popular and so I can find it easily again
+- As a logged in Site User I can follow profiles so that I can find it easily again
 
 <br>
 
-To follow an agile approch, a project board (kanban-board) was set up using GitHub Projects: [Kanban]()
+To follow an agile approch, a project board (kanban-board) was set up using GitHub Projects: [Kanban](https://github.com/Monika-81/wanderlust-p5/projects/1)
 
 <br>
 
@@ -183,7 +212,7 @@ The wireframes for the project is very basic to get the feeling where I wanted t
 </details>
 
 
-#### **Edit Post**
+#### **Edit & Post**
 <details>
 
 
@@ -193,16 +222,6 @@ The wireframes for the project is very basic to get the feeling where I wanted t
 ![Edit button]()
 ![Edit post]()
 ![Edit play]()
-
-<br>
-</details>
-
-#### **Delete Post**
-<details>
-
-<br>
-<br> 
-
 ![Delete button]()
 ![Delete modal]()
 
@@ -250,15 +269,16 @@ The wireframes for the project is very basic to get the feeling where I wanted t
 <br>
 </details>
 
-#### **Contact Form**
+#### **Follow/Followers**
 <details>
 
 
 <br>
 <br> 
 
-![Contact form]()
-![Confirmation]()
+![Likes list]()
+![Likes post]()
+![Toggled like]()
 
 <br>
 </details>
@@ -277,14 +297,6 @@ The wireframes for the project is very basic to get the feeling where I wanted t
 <br>
 </details>
 
-#### **Admin**
-<details>
-
-
-![Search bar]()
-
-<br>
-</details>
 
 #### **Future Feature**
 <details>
@@ -301,8 +313,11 @@ The wireframes for the project is very basic to get the feeling where I wanted t
 
 ### The Design
 
+The design choice for the Wanderlust site aims to get the user to think about a travel diary. With a decorative image .... the image is instead set at the top to welcome the user.
+
 #### Color scheme
 
+The goal of the design is to keep a clean and consistent user experience throughout the pages. With a light background/dark text set up and one accent color .... The color was picked ... Chrome DevTools color dropper tool, then slightly adjusted so the text would still be readable against the background if the image won't load. A color palette was created with the help of Colormind to work as a design foundation during the project...........
 
 ![Color Scheme]()
 
@@ -323,11 +338,17 @@ A contrast grid was used to see how well the colors worked together and to maxim
 
 #### **Languages**
 
-- **Django**
-<br> For this full stack project the Python based framework Django is the development language for the application. I used PostgreSQL database, psycopg2 as the adapter and a gunicorn server. I installed a battery of extra libraries to help run everything smoothly:
+- **React JS**
+<br> The main language for building the User interface for the front end of this full stack application is the JavaScript Library React. React allows for creating reusable UI components that can update separately making the site interactive and user friendly.
 
+
+- **Django REST Framework**
+<br> For this full stack project the Python based framework Django is the development language for the back end API. I used PostgreSQL database, psycopg2 as the adapter and a gunicorn server implementation using WSGI standard. I installed a battery of extra libraries to help run everything smoothly:
+
+    * Pillow (Python Imaging Library)
     * Cloudinary (to host static files)
     * Bootstrap 4 (to style the content and make it resposive)
+    * Multiple Django rest libraries (authentication, filters, jwt-tokens, django database url)
 
 - **HTML5**
 <br> I used HTML to create the base structure of the project. I started with a basic boilerplate set up and created the first crude structure of the page out of the original design. 
@@ -445,7 +466,7 @@ A copy of this GitHub Repository can be made by either making a copy on your loc
 
 ### **Content**
 
-For most of the development and bug fixes I went back to the Code Institute LMS (over and over again) and the learning material for this section of the course.
+For most of the development and bug fixes I went back to the Code Institute LMS (over and over again) and the learning material for this section of the andvanced front end course. While setting up the API the provided Cheat Sheets in the Django section was heavily relied on. Most of the API code is based on the moments project but adjusted to fir this project.
 
 Some of the other sites media I frequently **consulted** was :
 <br>
