@@ -7,7 +7,7 @@ class Post(models.Model):
     Model for posts
     '''
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
-    title = models.CharField(max_length=20)
+    title = models.CharField(max_length=30)
     subtitle = models.CharField(max_length=60)
     content = models.TextField(blank=True)
     image = models.ImageField(
