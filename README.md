@@ -24,15 +24,13 @@ Let me introduce you further to [**Wanderlust**]()!
     - [Home page](#home-page)
     - [Navigation](#navigation)
     - [Add post](#add-post)
-    - [Edit post](#edit-post)
-    - [Delete post](#delete-post)
+    - [Edit & delete post](#edit-&-delete-post)
     - [Like post](#like-post)
     - [Comments](#comments)
     - [Profile page](#profile-page)
-    - [Contact form](#contect-form)
+    - [Follow profile](#follow-profile)
     - [Search function](#search-function)
-    - [Admin](#admin)
-
+    - [Future feature](#future-feature)
    
 4. [**Skeleton**](#skeleton)
     - [Technologies](#technologies)
@@ -212,7 +210,7 @@ The wireframes for the project is very basic to get the feeling where I wanted t
 </details>
 
 
-#### **Edit & Post**
+#### **Edit & Delete Post**
 <details>
 
 
@@ -269,7 +267,7 @@ The wireframes for the project is very basic to get the feeling where I wanted t
 <br>
 </details>
 
-#### **Follow/Followers**
+#### **Follow profile**
 <details>
 
 
