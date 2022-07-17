@@ -8,7 +8,7 @@ class Profile(models.Model):
     Model for profile
     '''
     owner = models.OneToOneField(User, on_delete=models.CASCADE)
-    name = models.CharField(max_length=100, blank=True)
+    name = models.CharField(max_length=30, blank=True)
     content = models.TextField(blank=True)
     image = models.ImageField(
         upload_to='images/', default='../default_profile_y81gkj', blank=True

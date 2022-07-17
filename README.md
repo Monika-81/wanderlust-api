@@ -103,7 +103,7 @@ What the user will be looking for:
 
 **Epic: Site View**
 - As a Site User I can read posts and comments in detail so that I can get information and inspiration
-- As a Site User I can see the latest post at the home page so that I get the newest input directly
+- As a Site User I can see a specific users post at their profile page so that I can see if I want to follow their profile
 - As a Site User I can use a search function so that I can find the right post or user that interests me
 - As a Site User I can easily and intuitively navigate the site so that I can find what I am looking for
 - As a Site User I can see the date a post was created and updated so that I know how accurate it is
@@ -114,10 +114,13 @@ What the user will be looking for:
 - As a logged in Site User I can edit or delete my posts and comment so that I display controll my input on the site
 - As a logged in Site User I can like posts so that others can see if a post is popular and so I can find it easily again
 - As a logged in Site User I can follow profiles so that I can find it easily again
+- As a Site User I get notifications when something is wrong or changed so that I understand how to use the app
 
 <br>
 
-To follow an agile approch, a project board (kanban-board) was set up using GitHub Projects: [Kanban](https://github.com/Monika-81/wanderlust-p5/projects/1)
+To follow an agile approch, a project board (kanban-board) was set up using GitHub Projects: 
+- Front-End: [Kanban](https://github.com/Monika-81/wanderlust-p5/projects/1)
+-Back-End: [Kanban](https://github.com/Monika-81/wanderlust-api/projects/1)
 
 <br>
 
