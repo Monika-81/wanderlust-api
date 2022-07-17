@@ -1,5 +1,5 @@
 # **Wanderlust**
-Waderlust is your online travel diary app, where you can post anekdotes about your travel adventures! Both for yourself to remember, to share with family and friends as well as to inspire other fellow wanderlusters around the globe. The travel diary aims to be a platform for inspiration, discussions and sharing about all thiings travel related. The user can search for other  users posts to get information and inspiration for coming trips, as well as to share and communicate with there friends and family about the trip they are undertaken orprieviously been came home from. The travel diary site targets various kinds of people whom are interested in knowing more about a specific travel location, travel in general or to just socialize with likeminded Wanderlusters!
+Waderlust is your online travel diary app, where you can post anecdotes about your travel adventures! Both for yourself to remember, to share with family and friends as well as to inspire other fellow wanderlusters around the globe. The travel diary aims to be a platform for inspiration, discussions and sharing about all things travel related. The user can search for other  users posts to get information and inspiration for coming trips, as well as to share and communicate with there friends and family about the trip they are undertaken orprieviously been came home from. The travel diary site targets various kinds of people whom are interested in knowing more about a specific travel location, travel in general or to just socialize with like-minded Wanderlusters!
 
 **Wanderlust** 
 
@@ -65,10 +65,10 @@ Let me introduce you further to [**Wanderlust**]()!
 With the UX principles in mind I started with the Strategy phace, thinking about the target audience and what features would benefit them. 
 
 The target audience are:
-- people in various age groups, mostly adults, that like to travel
-- people that like to search for inspiration for their next travel
-- people that like to share about their travels
-- people that like to follow others travel adventures
+- people in various age groups, mostly adults, who likes to travel
+- people that likes to search for inspiration online for their next trip
+- people that likes to share about their travels
+- people that likes to follow others travel adventures
 - people searching for a specific destination or topic
 
 What the user will be looking for:
@@ -101,14 +101,14 @@ What the user will be looking for:
 - As a Site User I can create a personal profile so that I can control my content
 - As a Site User I can edit my personal profile so that I can keep it up to date and safe
 
-**Epic: Forum View**
+**Epic: Site View**
 - As a Site User I can read posts and comments in detail so that I can get information and inspiration
 - As a Site User I can see the latest post at the home page so that I get the newest input directly
 - As a Site User I can use a search function so that I can find the right post or user that interests me
 - As a Site User I can easily and intuitively navigate the site so that I can find what I am looking for
 - As a Site User I can see the date a post was created and updated so that I know how accurate it is
 
-**Epic: Forum Interactions**
+**Epic: Site Interactions**
 - As a logged in Site User I can create new post so that I can update my travel diary
 - As a logged in Site User I can comment on posts so that I can interact with the other users
 - As a logged in Site User I can edit or delete my posts and comment so that I display controll my input on the site

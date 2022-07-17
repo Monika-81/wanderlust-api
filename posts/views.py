@@ -31,7 +31,9 @@ class PostList(generics.ListCreateAPIView):
     ]
     search_fields = [
         'owner__username',
-        'title'
+        'title',
+        'subtitle',
+        'content'
     ]
     ordering_fields = [
         'comments_count',
