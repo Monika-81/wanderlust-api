@@ -8,10 +8,6 @@ Live back end site [Wanderlust API](https://wanderlust-api-p5.herokuapp.com/)
 <br>
 <br>
 
-![Home]
-<br>
-
-
 ## **Content**
 1. [**Project goal**](#project-goal)
 2. [**Entity Relationship Diagram**](#entity-relationship-diagram)
@@ -31,8 +27,6 @@ Live back end site [Wanderlust API](https://wanderlust-api-p5.herokuapp.com/)
 [Back to top](#wanderlust)
 
 <br>
-
-
 
 ---
 
@@ -61,7 +55,7 @@ What the user will be looking for:
 
 <br>
 
-## Entity Relationship Diagram
+## **Entity Relationship Diagram**
 
 <br>
 
@@ -87,7 +81,7 @@ And the finished models:
 <br>
 
 
-## Technologies
+## **Technologies**
 ---
 
 To structure the building process of the project I used a project board on GitHub: [Kanban](https://github.com/Monika-81/wanderlust-api/projects/1).
