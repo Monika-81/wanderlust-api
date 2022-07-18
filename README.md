@@ -80,6 +80,8 @@ And the finished models:
 
 <br>
 
+[Back to top](#wanderlust)
+
 
 ## **Technologies**
 ---
@@ -241,7 +243,6 @@ A copy of this GitHub Repository can be made by either making a copy on your loc
 ### **Forking**
 - Locate the repository at **GitHub**.
 - At the top right-hand side is a button called *fork*, click on the button to create a copy of the original repository in your GitHub Account.
-<br>
 <br>
 
 The front end repository is found at: https://github.com/Monika-81/wanderlust-p5
