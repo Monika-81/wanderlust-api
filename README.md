@@ -1,9 +1,9 @@
-# **Wanderlust**
-Waderlust is your online travel diary app, where you can post anecdotes about your travel adventures! Both for yourself to remember, to share with family and friends as well as to inspire other fellow wanderlusters around the globe. The travel diary aims to be a platform for inspiration, discussions and sharing about all things travel related. The user can search for other users posts to get information and inspiration for coming trips, as well as to share and communicate with there friends and family about the trip they are undertaken orprieviously been came home from. The travel diary site targets various kinds of people whom are interested in knowing more about a specific travel location, travel in general or to just socialize with like-minded Wanderlusters!
+# **Wanderlust API**
+Waderlust API is the backbone of your online travel diary app, where you can post anecdotes about your travel adventures! Both for yourself to remember, to share with family and friends as well as to inspire other fellow wanderlusters around the globe. The travel diary aims to be a platform for inspiration, discussions and sharing about all things travel related.
 
 **Wanderlust** 
 
-Let me introduce you further to [**Wanderlust**]()!
+Let me introduce you further to the [**Wanderlust**]() API!
 <br>
 <br>
 
@@ -16,11 +16,14 @@ Let me introduce you further to [**Wanderlust**]()!
 2. [Entity Relationship Diagram](#entity-relationship-diagram)
 3. [Technologies](#technologies) 
 4. [**Testing**](#testing)
-7. [**Deployment**](#deployment)
+    - [Manual testing](#manual-testing)
+    - [Code validation](#code-validation)
+    - [Bugs & fixes](#bugs-and-fixes)
+5. [**Deployment**](#deployment)
     - [Deployment](#deployment)
     - [Clone](#clone)
     - [Forking](#forking)
-8. [**Credits**](#credits)
+6. [**Credits**](#credits)
     - [Content](#content)
     - [Acknowledgement](#acknowledgement)
 
@@ -34,7 +37,7 @@ Let me introduce you further to [**Wanderlust**]()!
 
 ## **Project goal**
 
-The goal with this project is to create a content sharing online travel diary that allows the user to create, read, update and delete their content for a fully interactive experience. 
+The goal with this full stack project is to create a content sharing online travel diary that allows the user to create, read, update and delete their content for a fully interactive experience. 
 
 The goals are summarised here:
 
@@ -42,8 +45,6 @@ The goals are summarised here:
 - Allow the users to comment, like and follow other users.
 - Make a responsive app that are easily accessible on every viewport, and with screen readers.
 - Make a easily navigated app, with intuitive features 
-- Make the user curious to come back for more
-
 
 What the user will be looking for:
 
@@ -67,34 +68,34 @@ The planing of the database models, aka the Entity Relationship Diagram, is illu
 
 <br>
 
-![ERD]()
+![ERD](readme-docs/erd-wanderlust.png)
 
 <br>
 
 And the finished models:
-
 <br>
+<details>
 
-![ERD]()
-
-
-<br>
-<br> 
-
-![Search bar]()
-![Search fail]()
-![Search success]()
-
-<br>
+![profile](readme-docs/profile-model.png)
+![post](readme-docs/post-model.png)
+![comment](readme-docs/comment-model.png)
+![follower](readme-docs/follower-model.png)
+![like](readme-docs/likes-model.png)
 </details>
+
+<br>
 
 
 ## Technologies
 ---
 
-### **Languages**
+To structure the building process of the project I used a project board on GitHub: [Kanban](https://github.com/Monika-81/wanderlust-api/projects/1).
 
-- **Django REST Framework**
+<br>
+
+### **Language**
+
+**Django REST Framework**
 <br> For this project the Python based framework Django REST is the development language for the back end API. I used sqlite3 database in development and PostgreSQL database on heroku, psycopg2 as the adapter and a gunicorn server implementation using WSGI standard. I installed a battery of extra libraries to help run everything smoothly:
 
     * Pillow (Python Imaging Library)
@@ -107,9 +108,6 @@ And the finished models:
 
 - [Heroku](https://www.heroku.com/)
     -  I used Heroku to deploy the application. 
-
-- [Colormind](http://www.colormind.io)
-    - I used Colormind to create a color palette for my color scheme.
 
 - [Cloudinary](https://cloudinary.com/)
     - To store the images for the project.
@@ -130,6 +128,61 @@ And the finished models:
 
 ## **Testing**
 
+### **Manual testing**
+
+During the entire developing stage I repeatedly tested the elements added and altered using the development server GitPod provides. After the site was live deployed I also checked the site regularly from heroku to see that all was up to par and that new content from the front end was registered in the database.
+
+![Manual testing](readme-docs/manual-testing.png)
+
+<br>
+Deloyed API to Heroku, lists of database content:
+<details>
+
+![profiles](readme-docs/heroku-profiles.png)
+![profile](readme-docs/heroku-a-profile.png)
+![posts](readme-docs/heroku-posts.png)
+![comments](readme-docs/heroku-comments.png)
+</details>
+
+<br>
+<br>
+
+
+### **Code validation**
+<br>
+
+- [Python PEP8 Validator](http://pep8online.com/) 
+
+When the basic structure of the project was done I ran code validation through the PEP8 Validator. This procedure was repeated multiple times to validate that new the code was working during the developing process. Mostly the PEP8 reported bugs with whitespace, both too much whitespace as missing whitespace in the code, as well as with my lines being too long. The settings.py still have seven errors in the end due to too long lines and codenames or continuing line over indented. None of those have I changed since that ended up rendering other errors.
+Below are the final test of the python files in PEP8:
+
+- settings.py (with errors)
+- profiles/views.py (example of result from all the other files)
+
+<details>
+<br>
+
+![settings](readme-docs/settings-py.png)
+![views](readme-docs/profiles-views-py-ok.png)
+
+
+<br>
+</details>
+
+<br>
+### **Bugs and fixes**
+
+There were a number of small bugs and mishaps committed through the development manily because of whitespace, type-o's and extra linebreaks. But mainly everything ran smoothly with the help of the CI Cheat sheet. 
+
+**The major bugs where**: <br>
+1. I forgot to install the right version of Django (version 4), wanting to follow the LMS without breaking the code.
+    - Had to restart the project and create a new workspace, installing Django3.2.
+2. After creating the posts app, uploading an image wouldn't work but instead broke the application with the message: "The 'image' attribute has no file associated with it".
+    - Unclear what the error was, I tried to delete the post app and restart it. But made the problem worse. So I restarted the entire project once again. Transferred code from old workspace to the new, until installment of posts app.
+3. Had repeted problems with deployment to heroku: Code problem in settings.py not connecting rest_framework and later after deployment rendering a 400 Bad request message.
+    - I was missing the psycopg2 installment.Had to restructure the settings.py file. Adding code for ALLOWED_HOSTS to heroku and changed code for CORS_ALLOWED_ORIGIN_REGEXES.
+4. After building the front end app, the signin/signup didn't work. The profile was created to the back end api but I could not progress onto the wite. Got the message that the request was not allowed by CORS: "No-Access-Origin-Allowed". After trying to go through the code for many hours, trying to find fixes from StackOverflow and Slack etc I got help from tutor support:
+    - It ended up being a missing "HTTPS://" in the heroku config var CLIENT_ORIGIN.
 
 <br>
 <br>
@@ -203,7 +256,7 @@ For most of the development and bug fixes I went back to the Code Institute LMS 
 
 ### **Media**
 
-- Image in cloudinary from walktrhrough project...............................
+- The image used for the default profile image on Cloudinary, is the same as was used in the LMS for the walkthrough project API. It worked for the same purpose for my site and I saw no need to search for a similar picture to use in my project.
 
 ### **Acknowledgement**
 
