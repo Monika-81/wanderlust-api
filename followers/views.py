@@ -18,7 +18,7 @@ class FollowerList(generics.ListCreateAPIView):
 
 class FollowerDetail(generics.RetrieveDestroyAPIView):
     '''
-    Displays single follower. Aallows the user to follow 
+    Displays single follower. Allows the user to follow
     or unfollow another user.
     '''
     serializer_class = FollowerSerializer
