@@ -193,7 +193,7 @@ There were a number of small bugs and mishaps committed through the development 
 3. Had repeted problems with deployment to heroku: Code problem in settings.py not connecting rest_framework and later after deployment rendering a 400 Bad request message.
 
     - I was missing the psycopg2 installment.Had to restructure the settings.py file. Adding code for ALLOWED_HOSTS to heroku and changed code for CORS_ALLOWED_ORIGIN_REGEXES.
-    
+
     <br>
 
 4. After building the front end app, the signin/signup didn't work. The profile was created to the back end api but I could not progress onto the wite. Got the message that the request was not allowed by CORS: "No-Access-Origin-Allowed". After trying to go through the code for many hours, trying to find fixes from StackOverflow and Slack etc I got help from tutor support:
@@ -231,10 +231,7 @@ The project was deployed to **Heroku** from **GitPod** using two heroku apps for
 
 The live back-end app can be found here: https://wanderlust-api-p5.herokuapp.com/
 <br>
-
 <br>
-<br>
-
 
 A copy of this GitHub Repository can be made by either making a copy on your local machine or by forking the GitHub content. By using a copy of the repository changes can be made to the copy without affecting the original code. To make a copy of the repository, follow these steps:
 
@@ -246,7 +243,6 @@ A copy of this GitHub Repository can be made by either making a copy on your loc
 - Choose your code editor, open GitBash and change the working directory to where you want the cloned directory to be made saved.
 - In the terminal you write git clone and then paste the copied URL. Like this: '$ git clone https://github.com/Monika-81/wanderlust-api.git' 
 - Press enter and then install the dependencies you like to use for the project.
-<br>
 
 ### **Forking**
 - Locate the repository at **GitHub**.
@@ -268,11 +264,10 @@ The front end repository is found at: https://github.com/Monika-81/wanderlust-p5
 For most of the development and bug fixes I went back to the Code Institute LMS (over and over again!) and the learning material for the Django REST Framework section of the course. While setting up the API the provided Cheat Sheets in that section was heavily relied on. Most of the API code is based on the moments project to focus on learning and understanding the functions better, but adjusted to fit this project. 
 
 
-<br>
-
 ### **Media**
 
 - The image used for the default profile image on Cloudinary, is the same as was used in the LMS for the walkthrough project API. It worked for the same purpose for my site and I saw no need to search for a similar picture to use in my project.
+
 
 ### **Acknowledgement**
 
