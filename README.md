@@ -13,9 +13,9 @@ Live back end site [Wanderlust API](https://wanderlust-api-p5.herokuapp.com/)
 
 
 ## **Content**
-1. [Project goal](#project-goal)
-2. [Entity Relationship Diagram](#entity-relationship-diagram)
-3. [Technologies](#technologies) 
+1. [**Project goal**](#project-goal)
+2. [**Entity Relationship Diagram**](#entity-relationship-diagram)
+3. [**Technologies**](#technologies) 
 4. [**Testing**](#testing)
     - [Manual testing](#manual-testing)
     - [Code validation](#code-validation)
