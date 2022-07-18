@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from .models import Profile
 from followers.models import Follower
+from .models import Profile
 
 
 class ProfileSerializer(serializers.ModelSerializer):
@@ -11,7 +11,6 @@ class ProfileSerializer(serializers.ModelSerializer):
     followers_count = serializers.ReadOnlyField()
     following_count = serializers.ReadOnlyField()
 
-
     def get_is_owner(self, obj):
         request = self.context['request']
         return request.user == obj.owner
@@ -20,7 +19,8 @@ class ProfileSerializer(serializers.ModelSerializer):
         model = Profile
         fields = [
             'id', 'owner', 'name', 'content', 'image', 'created_at',
-            'updated_at', 'is_owner', 'following_id', 'posts_count', 'followers_count', 'following_count'
+            'updated_at', 'is_owner', 'following_id', 'posts_count',
+            'followers_count', 'following_count'
         ]
 
     def get_following_id(self, obj):

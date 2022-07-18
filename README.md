@@ -130,7 +130,7 @@ And the finished models:
 
 ## **Testing**
 
-For more information about the testing performed during the development, go to the separate [testing](/TESTING.md) page.
+
 <br>
 <br>
 
