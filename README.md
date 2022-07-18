@@ -171,18 +171,33 @@ Below are the final test of the python files in PEP8:
 </details>
 
 <br>
+
 ### **Bugs and fixes**
 
-There were a number of small bugs and mishaps committed through the development manily because of whitespace, type-o's and extra linebreaks. But mainly everything ran smoothly with the help of the CI Cheat sheet. 
+There were a number of small bugs and mishaps committed through the development manily because of whitespace, type-o's and extra linebreaks. But mainly everything ran smoothly with the help of the Code Institute cheat sheet's for the Django REST project. 
 
 **The major bugs where**: <br>
+
 1. I forgot to install the right version of Django (version 4), wanting to follow the LMS without breaking the code.
+
     - Had to restart the project and create a new workspace, installing Django3.2.
-2. After creating the posts app, uploading an image wouldn't work but instead broke the application with the message: "The 'image' attribute has no file associated with it".
+
+    <br>
+
+2. After creating the posts app, uploading an image wouldn't work but instead broke the application with the message: <br> "The 'image' attribute has no file associated with it".
+
     - Unclear what the error was, I tried to delete the post app and restart it. But made the problem worse. So I restarted the entire project once again. Transferred code from old workspace to the new, until installment of posts app.
+
+    <br>
+
 3. Had repeted problems with deployment to heroku: Code problem in settings.py not connecting rest_framework and later after deployment rendering a 400 Bad request message.
+
     - I was missing the psycopg2 installment.Had to restructure the settings.py file. Adding code for ALLOWED_HOSTS to heroku and changed code for CORS_ALLOWED_ORIGIN_REGEXES.
+    
+    <br>
+
 4. After building the front end app, the signin/signup didn't work. The profile was created to the back end api but I could not progress onto the wite. Got the message that the request was not allowed by CORS: "No-Access-Origin-Allowed". After trying to go through the code for many hours, trying to find fixes from StackOverflow and Slack etc I got help from tutor support:
+    
     - It ended up being a missing "HTTPS://" in the heroku config var CLIENT_ORIGIN.
 
 <br>
