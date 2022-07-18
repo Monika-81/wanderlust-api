@@ -11,7 +11,7 @@ class Post(models.Model):
     subtitle = models.CharField(max_length=60)
     content = models.TextField(blank=True)
     image = models.ImageField(
-        upload_to='images/', default='../default_post_zih4gk', blank=True
+        upload_to='images/', blank=True
     )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
