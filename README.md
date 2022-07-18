@@ -3,7 +3,7 @@ Waderlust API is the backbone of your online travel diary app, where you can pos
 
 **Wanderlust** 
 
-Live front end site [Wanderlust](https://wanderlust-p5.herokuapp.com/) 
+Live front end site [Wanderlust](https://wanderlust-p5.herokuapp.com/) <br>
 Live back end site [Wanderlust API](https://wanderlust-api-p5.herokuapp.com/)
 <br>
 <br>
