@@ -1,5 +1,5 @@
 # **Wanderlust API**
-Waderlust API is the backbone of your online travel diary app, where you can post anecdotes about your travel adventures! Both for yourself to remember, to share with family and friends as well as to inspire other fellow wanderlusters around the globe. The travel diary aims to be a platform for inspiration, discussions and sharing about all things travel related.
+Wanderlust API is the backbone of your online travel diary app, where you can post anecdotes about your travel adventures! Both for yourself to remember, to share with family and friends as well as to inspire other fellow wanderlusters around the globe. The travel diary aims to be a platform for inspiration, discussions and sharing about all things travel related.
 
 **Wanderlust** 
 
@@ -34,7 +34,7 @@ Live back end site [Wanderlust API](https://wanderlust-api-p5.herokuapp.com/)
 
 The goal with this full stack project is to create a content sharing online travel diary that allows the user to create, read, update and delete their content for a fully interactive experience. 
 
-The goals are summarised here:
+The goals are summarized here:
 
 - Make the apps **React** front end content connect smoothly with the **Django REST** back end to store, fetch and delete content.
 - Allow the users to comment, like and follow other users.
@@ -170,7 +170,7 @@ Below are the final test of the python files in PEP8:
 
 ### **Bugs and fixes**
 
-There were a number of small bugs and mishaps committed through the development manily because of whitespace, type-o's and extra linebreaks. But mainly everything ran smoothly with the help of the Code Institute cheat sheet's for the Django REST project. 
+There were a number of small bugs and mishaps committed through the development mainly because of whitespace, type-o's and extra linebreaks. But mainly everything ran smoothly with the help of the Code Institute cheat sheet's for the Django REST project. 
 
 **The major bugs where**: <br>
 
@@ -186,13 +186,13 @@ There were a number of small bugs and mishaps committed through the development 
 
     <br>
 
-3. Had repeted problems with deployment to heroku: Code problem in settings.py not connecting rest_framework and later after deployment rendering a 400 Bad request message.
+3. Had repeated problems with deployment to heroku: Code problem in settings.py not connecting rest_framework and later after deployment rendering a 400 Bad request message.
 
     - I was missing the psycopg2 installment.Had to restructure the settings.py file. Adding code for ALLOWED_HOSTS to heroku and changed code for CORS_ALLOWED_ORIGIN_REGEXES.
 
     <br>
 
-4. After building the front end app, the signin/signup didn't work. The profile was created to the back end api but I could not progress onto the wite. Got the message that the request was not allowed by CORS: "No-Access-Origin-Allowed". After trying to go through the code for many hours, trying to find fixes from StackOverflow and Slack etc I got help from tutor support:
+4. After building the front end app, the signin/signup didn't work. The profile was created to the back end api but I could not progress onto the site. Got the message that the request was not allowed by CORS: "No-Access-Origin-Allowed". After trying to go through the code for many hours, trying to find fixes from StackOverflow and Slack etc I got help from tutor support:
     
     - It ended up being a missing "HTTPS://" in the heroku config var CLIENT_ORIGIN.
 
@@ -269,8 +269,6 @@ For most of the development and bug fixes I went back to the Code Institute LMS 
 - My mentor **Sammy Dartnall** at Code Institute for valuable input, support and encouragement.
 - The Code Institute Tutor support when I got stuck with bugs uploading the content to Heroku.
 - The Slack community for being such an open, warm and sharing place. 
-- **Viet Hoang** for letting me run the app by him and for getting user experience input before, during and at the final stage of the project.
-
 
 [Back to top](#wanderlust)
 
